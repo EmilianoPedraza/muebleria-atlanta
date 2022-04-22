@@ -30,13 +30,13 @@ h4 {
   font-weight: 700;
 }
 h3{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 h1 {
-  background: linear-gradient(to top, #1fdef7ad, black, black);
+  background: linear-gradient(to top,  #1fdef7ad, black, black);
   font-size: 4rem;
   border-radius: 1rem;
 
@@ -73,12 +73,15 @@ footer {
   padding: 1rem;
   grid-area: footer;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
+.footer__a{
+  margin:0 5% 0 5%;
+}
 .footer__a img {
-  width: 5rem;
-  padding: 0.8em;
+  width: 2em;
+  padding: 0.2em;
   background-color: #f0eddbfb;
   border-radius: 10%;
 }
@@ -101,6 +104,7 @@ main {
   text-align: center;
 }
 .main__div {
+  margin-top: 7em;
   padding: 1em;
   height: 600px;
   overflow: hidden;
@@ -112,13 +116,48 @@ main {
   border-radius: 2rem;
 }
 .header__nav {
-  height: 100vh;
+  overflow: hidden;
+  height: 100%;
   width: 5%;
-  background-color: #f0eddbfb;
-  position: absolute;
+  background-color: #1a495e;
+  position: fixed;
   left: 0;
   top: 0;
+  transition: all 0.5s;
 }
 .nav__img {
-  width: 60%;
+  width: 2.5rem;
+}
+.nav__ul__li{
+
+}
+.li__ul__li a{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+}
+.header__nav:hover{
+  width: 11%;
+}
+
+.textOculto{
+  transform: scale(0,1);
+}
+a:hover .textOculto{
+  transform: scale(1,1);
+}
+.div__img img{
+  animation-name: jump;
+  animation-iteration-count: infinite;
+
+  transition: transform 1s;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+@keyframes jump{
+  50%{
+    transform: translateY(-20px);
+    box-shadow: #1a495e 0 50px 20px -20px;
+  }
+  
 }
