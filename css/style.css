@@ -3,7 +3,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url("/assets/media/images/background/plaster.jpg");
+  background-image: url("../assets/media/images/background/plaster.jpg");
   font-family: "Noto Serif", serif;
   display: grid;
   grid-template-columns: 1fr;
