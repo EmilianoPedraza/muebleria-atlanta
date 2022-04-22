@@ -128,9 +128,6 @@ main {
 .nav__img {
   width: 2.5rem;
 }
-.nav__ul__li{
-
-}
 .li__ul__li a{
   display: grid;
   grid-template-columns: 0.5fr 1fr;
